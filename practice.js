@@ -27,6 +27,7 @@ function getLength(inputArray) {
 function last(inputArray) {
   //Code here
   const lastItem = inputArray [inputArray.length - 1]
+
   return lastItem;
 }
 
@@ -64,6 +65,9 @@ function removeFirst(inputArray) {
 
 function replaceFirstAndLast(inputArray) {
   //Code here
+  inputArray.splice(inputArray.length - 1, 1, 42)
+  inputArray.splice(0, 1, 42)
+
   return inputArray;
 }
 
@@ -78,6 +82,10 @@ function replaceFirstAndLast(inputArray) {
 function addTen(inputArray) {
   let newArr = [];
   // Code here
+
+  for (const num of inputArray) {
+    newArr.push(num + 10)
+  }
 
   return newArr;
 }
@@ -100,6 +108,9 @@ function count31() {
 function countEvens() {
   let numbers = [];
   // Code here
+  for (let i = 0; i <= 20; i += 2) {
+    numbers.push(i)
+  }
 
   return numbers;
 }
