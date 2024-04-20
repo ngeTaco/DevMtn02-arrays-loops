@@ -4,6 +4,8 @@
 
 function first(inputArray) {
   //Code here
+  const firstItem = inputArray[0];
+
   return firstItem;
 }
 
@@ -13,6 +15,8 @@ function first(inputArray) {
 
 function getLength(inputArray) {
   //Code here
+  const arrayLength = inputArray.length 
+
   return arrayLength;
 }
 
@@ -22,6 +26,7 @@ function getLength(inputArray) {
 
 function last(inputArray) {
   //Code here
+  const lastItem = inputArray [inputArray.length - 1]
   return lastItem;
 }
 
