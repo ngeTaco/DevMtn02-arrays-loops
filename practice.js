@@ -102,7 +102,9 @@ function addTen(inputArray) {
 function count31() {
   let numbers = [];
   // Code here
-
+for (let i = 0; i <= 31; i++) {
+  numbers.push(i)
+}
   return numbers;
 }
 
@@ -127,7 +129,9 @@ function countEvens() {
 function countdown() {
   let numbers = [];
   // Code here
-
+  for (let i = 10; i >= 1; i -= 1) {
+    numbers.push(i)
+  }
   return numbers;
 }
 
@@ -142,7 +146,9 @@ function countdown() {
 function backwards(inputArray) {
   let newArray = [];
   // Code here
-
+  for (let i = inputArray.length-1; i >= 0; i -= 1) {
+    newArray.push(inputArray[i])
+  }
   return newArray;
 }
 
@@ -156,6 +162,20 @@ function backwards(inputArray) {
 
 function findInArray(inputArray, value) {
   // Code here
+  let valueFound = false;
+  let i = 0
+  // for (let i = 0; i <= inputArray.length; i ++ ){
+  //   if (inputArray[i] === value) {
+  //     valueFound = true
+  //     break;
+  //   }
+  // }
+  while (valueFound === false ) {
+    if (inputArray[i] === value) {
+          valueFound = true
+        } 
+        i ++
+  }
   return valueFound;
 }
 
@@ -170,6 +190,12 @@ function findInArray(inputArray, value) {
 function stopAtNegative(inputArray) {
   let newArray = [];
   // Code here
-
+  for (let i = 0; i <= inputArray.length; i ++ ){
+    if (inputArray[i] < 0) {
+      break;
+    } else if (inputArray[i] > 0) {
+      newArray.push(inputArray[i])
+    }
+  }
   return newArray;
 }
