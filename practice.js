@@ -37,6 +37,8 @@ function last(inputArray) {
 
 function addItem(inputArray, num) {
   //Code here
+  inputArray.push(num);
+
   return inputArray;
 }
 
@@ -46,6 +48,8 @@ function addItem(inputArray, num) {
 
 function removeLast(inputArray) {
   //Code here
+  inputArray.pop();
+
   return inputArray;
 }
 
@@ -55,6 +59,7 @@ function removeLast(inputArray) {
 
 function removeFirst(inputArray) {
   //Code here
+  inputArray.shift();
   return inputArray;
 }
 
